@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useContext, useEffect, useState } from 'react'
 
-import { Button } from './'
+import { Button, Logo } from './'
 
 import images from "../assets"
 
@@ -68,8 +68,7 @@ const Navbar = () => {
       <div className="flex flex-1 flex-row justify-start">
         <Link href={'/'}>
           <div className="flexCenter md:hidden cursor-pointer" onClick={() => { }}>
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="Logo" />
-            <p className="text-nft-black-1 font-semibold text-lg ml-1 dark:text-white">CryptoKet</p>
+         <Logo />
           </div>
         </Link>
         <Link href={'/'}>
