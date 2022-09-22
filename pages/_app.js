@@ -7,7 +7,9 @@ function MyApp({ Component, pageProps }) {
   <ThemeProvider attribute="class">
     <div className="dark:bg-nft-dark min-h-screen bg-white">
       <Navbar />
-      <Component {...pageProps} />
+      <div className="pt-65">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
 
